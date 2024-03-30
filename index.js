@@ -10,10 +10,10 @@ app.use(bodyParser.json());
 app.use(cors()); 
 
 // Set up PayPal client
-const clientId = 'ARczUVWk1e-x6ejyg0HiZpTzhHrUOkwEFl5bEN603Re_g29aKHtH9QTc7OICazEmdXh0nAg-RSiIuCED';
-const clientSecret = 'ELef53CDK1Q25iPsRcH68eAh5dLc4XLXx1s1wwo4DKkRPlb-ja-yQGdOnP_XkPnH-Kx6Tf2NmmMddo0f';
+const Id = 'ARczUVWk1e-x6ejyg0HiZpTzhHrUOkwEFl5bEN603Re_g29aKHtH9QTc7OICazEmdXh0nAg-RSiIuCED';
+const clientS = 'ELef53CDK1Q25iPsRcH68eAh5dLc4XLXx1s1wwo4DKkRPlb-ja-yQGdOnP_XkPnH-Kx6Tf2NmmMddo0f';
 
-const environment = new paypal.core.SandboxEnvironment(clientId, clientSecret);
+const environment = new paypal.core.SandboxEnvironment(Id, clientS);
 const client = new paypal.core.PayPalHttpClient(environment);
 
 // Define routes
