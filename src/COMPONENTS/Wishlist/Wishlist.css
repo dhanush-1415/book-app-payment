@@ -1,0 +1,128 @@
+.wishlistitem{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1rem 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.imgslider{
+    max-height: 430px;
+    overflow: auto;
+  }
+  
+.wishlistitem .s1{
+    width: 30%;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.wishlistitem .s1 img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* border-radius: 10px; */
+}
+
+.wishlistitem .s2{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 5px;
+    padding: 0 10px;
+    
+}
+
+.wishlistitem .s2 .qty{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.wishlistitem .s2 .qty button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 5px lightgrey;
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishlistitem .s2 .qty button:hover{
+    background-color: var(--col1);
+    color: white;
+}
+
+.wishlistitem .s2 .qty p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0px;
+}
+
+.wishlistitem .s3{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.wishlistitem .s3 p{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    margin: 0px;
+}
+
+
+.wishlistitem .removeitem{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.wishlistitem .removeitem button{
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    /* box-shadow: 1px 1px 5px lightgrey; */
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.wishlistitem .removeitem button svg{
+    color: black;
+}
+.outcont{
+    width: 65%;
+    height: 100%;
+    position: absolute;
+}
+
+/* make it responsive */
+
